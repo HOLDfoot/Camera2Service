@@ -7,5 +7,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:text="MainActivity onCreate 启动Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
