@@ -1,4 +1,4 @@
-package com.zyl.camera2inservice;
+package com.zyl.camera2service;
 
 import org.junit.Test;
 

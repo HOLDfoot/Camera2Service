@@ -1,4 +1,4 @@
-package com.zyl.camera2inservice;
+package com.zyl.camera2service;
 
 import android.annotation.SuppressLint;
 import android.app.Service;
@@ -26,7 +26,7 @@ import android.view.WindowManager;
 import java.util.Arrays;
 
 
-public class CameraService extends Service {
+public class Camera2Service extends Service {
 
     private static final String TAG = "CameraService";
     private CameraWindow cameraWindow;
@@ -222,14 +222,14 @@ public class CameraService extends Service {
         cameraWindow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CameraService.this, MainActivity.class);
+                Intent intent = new Intent(Camera2Service.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
 
                 if (cameraWindow.isAttachedToWindow()) {
                     mWindowManager.removeView(cameraWindow);
                 }
-                stopService(new Intent(CameraService.this, CameraService.class));
+                stopService(new Intent(Camera2Service.this, Camera2Service.class));
             }
         });
         if (!cameraWindow.isAttachedToWindow()) {

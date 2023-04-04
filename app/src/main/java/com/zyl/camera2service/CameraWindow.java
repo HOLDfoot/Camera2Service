@@ -1,4 +1,4 @@
-package com.zyl.camera2inservice;
+package com.zyl.camera2service;
 
 import android.annotation.SuppressLint;
 import android.app.Service;

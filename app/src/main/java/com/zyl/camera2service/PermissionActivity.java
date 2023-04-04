@@ -1,4 +1,4 @@
-package com.zyl.camera2inservice;
+package com.zyl.camera2service;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;

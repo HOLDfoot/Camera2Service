@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.zyl.camera2inservice'
+    namespace 'com.zyl.camera2service'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.zyl.camera2inservice"
+        applicationId "com.zyl.camera2service"
         minSdk 24
         targetSdk 33
         versionCode 1
